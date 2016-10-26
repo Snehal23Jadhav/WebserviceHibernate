@@ -40,8 +40,9 @@
  </bean>
 
  <bean id="persistenceExceptionTranslationPostProcessor"
-  class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+  class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor">
+</bean>
 
- <bean id="dataDao" class="com.beingjavaguys.dao.DataDaoImpl"></bean>
- <bean id="dataServices" class="com.beingjavaguys.services.DataServicesImpl"></bean>
+	 <bean id="dataDao" class="com.WebHibernate.WebService.DataDaoImpl"></bean>
+	 <bean id="dataServices" class="com.WebHibernate.WebService.services.DataServicesImpl"></bean>
 </beans>
